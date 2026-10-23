@@ -1,0 +1,92 @@
+@import url("https://fonts.googleapis.com/css2?family=Afacad:ital,wght@0,400..700;1,400..700&display=swap");
+
+:root {
+  --font-afacad: "Afacad";
+
+  /* Font sizes */
+  --font-size-h1: clamp(2.5rem, 2.214rem + 1.429vw, 3.5rem);
+  --font-size-h2: clamp(2.25rem, 2.036rem + 1.071vw, 3rem);
+  --font-size-h3: clamp(2rem, 1.857rem + 0.714vw, 2.5rem);
+  --font-size-h4: clamp(1.75rem, 1.643rem + 0.536vw, 2.125rem);
+  --font-size-h5: clamp(1.5rem, 1.429rem + 0.357vw, 1.75rem);
+  --font-size-h6: clamp(1.25rem, 1.179rem + 0.357vw, 1.5rem);
+  --font-size-text-lg: clamp(1.125rem, 1.089rem + 0.179vw, 1.25rem);
+  --font-size-text-md: clamp(0.9375rem, 0.92rem + 0.089vw, 1rem);
+  --font-size-text-sm: clamp(0.6875rem, 0.67rem + 0.089vw, 0.75rem);
+  --font-size-text-xs: clamp(0.5625rem, 0.545rem + 0.089vw, 0.625rem);
+
+  /* Dark color */
+  --dark-50: #e8e8ea;
+  --dark-100: #b9b9bd;
+  --dark-200: #97979d;
+  --dark-300: #676870;
+  --dark-400: #494a55;
+  --dark-500: #1c1d2a;
+  --dark-600: #191a26;
+  --dark-700: #14151e;
+  --dark-800: #0f1017;
+  --dark-900: #0c0c12;
+
+  /* Red color */
+  --red-50: #fce9e9;
+  --red-100: #f6b9bb;
+  --red-200: #f2989b;
+  --red-300: #ec686d;
+  --red-400: #e94b51;
+  --red-500: #e31e25;
+  --red-600: #cf1b22;
+  --red-700: #a1151a;
+  --red-800: #7d1114;
+  --red-900: #5f0d10;
+
+  /* White color */
+  --white-50: #ffffff;
+  --white-100: #fdfdfd;
+  --white-200: #fdfdfd;
+  --white-300: #fcfcfc;
+  --white-400: #fbfbfb;
+  --white-500: #fafafa;
+  --white-600: #e4e4e4;
+  --white-700: #b2b2b2;
+  --white-800: #8a8a8a;
+  --white-900: #696969;
+}
+
+* {
+  font-family: var(--font-afacad);
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+header {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  top: 2rem;
+}
+
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  max-width: 1000px;
+  padding: 1.25rem 2rem;
+  background-color: white;
+  border-radius: 1rem;
+}
+
+.nav-list {
+  list-style-type: none;
+  display: flex;
+  gap: 1.5rem;
+}
+
+.hosting-company-logo {
+  height: 1rem;
+  display: flex;
+  align-items: center;
+}

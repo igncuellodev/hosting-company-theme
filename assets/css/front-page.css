@@ -1,0 +1,8 @@
+main {
+  background-color: red;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  padding: 4rem;
+  gap: 80rem;
+}
