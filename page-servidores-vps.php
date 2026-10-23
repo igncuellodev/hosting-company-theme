@@ -4,6 +4,7 @@ Template Name: servidores vps
 
 
 <main>
+    <h1>Hola</h1>
     
 </main>
 
