@@ -14,7 +14,7 @@
 
     <header>
         <nav>
-            <a href="<?php echo esc_url(home_url('/')); ?>" class="odoo-logo">
+            <a href="<?php echo esc_url(home_url('/')); ?>">
                 <img
                     src="<?php echo esc_url(get_theme_file_uri('/assets/img/svg/logo-hosting-company.svg')); ?>"
                     alt="Hosting company logo" class="hosting-company-logo">
@@ -23,7 +23,17 @@
             <ul class="nav-list">
                 <li><a class="nav-link" href="/servidores-vps">Servidores VPS</a></li>
                 <li><a class="nav-link" href="/web-hosting">Web Hosting</a></li>
-                <li>Servicios</li>
+                <li id="dropdown">Servicios
+                    <ul class="dropdown-list">
+                        <li><a class="nav-link" href="/cloud-data-center">Cloud Data Center</a></li>
+                        <li><a class="nav-link" href="/doble-factor">Atenticación doble factor (2FA)</a></li>
+                        <li><a class="nav-link" href="/eset-antivirus">ESET Antivirus</a></li>
+                        <li><a class="nav-link" href="/ethical-hacking">Ethical Hacking</a></li>
+                        <li><a class="nav-link" href="/servicios-de-soporte">Servicios de soporte</a></li>
+                        <li><a class="nav-link" href="/telefonia-ip">Telefonía IP</a></li>
+
+                    </ul>
+                </li>
                 <li><a class="nav-link" href="/pago">Pago</a></li>
                 <li><a class="featured-link" href="https://clientes.hostingcompany.cl/index.php?rp=/login">Clientes</a></li>
 
@@ -69,7 +79,16 @@
                             <li><img src="<?php echo esc_url(get_theme_file_uri('./assets/img/svg/logo-hosting-company.svg'));?>" alt=""></li>
                             <li><a class="nav-link" href="/servidores-vps">Servidores VPS</a></li>
                             <li><a class="nav-link" href="/web-hosting">Web Hosting</a></li>
-                            <li>Servicios</li>
+                            <li class="nav-link">Servicios
+                                <ul class="side-servicios">
+                                    <li class="side-link">Cloud Data Center</li>
+                                    <li class="side-link">2FA</li>
+                                    <li class="side-link">ESET Antivirus</li>
+                                    <li class="side-link">Ethical Hacking</li>
+                                    <li class="side-link">Soporte</li>
+                                    <li class="side-link">Telefonía IP</li>
+                                </ul>
+                            </li>
                             <li><a class="nav-link" href="/pago">Pago</a></li>
                             <li><a class="featured-link" href="https://clientes.hostingcompany.cl/index.php?rp=/login">Clientes</a></li>
                             
