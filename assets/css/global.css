@@ -156,7 +156,7 @@ nav {
   background-color: rgba(0, 0, 0, 0.5);
   opacity: 0;
   visibility: hidden;
-  transition: ease-in 200ms;
+  transition: ease-in 300ms;
 }
 
 .active {
@@ -170,7 +170,7 @@ nav {
   background-color: white;
   position: absolute;
   right: 0;
-  transition: ease-in 300ms;
+  transition: ease-in 500ms;
   transform: translateX(400px);
   justify-content: center;
   align-items: start;
