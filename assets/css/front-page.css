@@ -6,8 +6,9 @@
   );
   height: 1000px;
   display: flex;
-  justify-content: center;
-  padding-top: 18rem;
+  align-items: center;
+  flex-direction: column;
+  padding-top: 13rem;
 }
 
 .hero-content {
@@ -36,6 +37,12 @@
   font-size: var(--font-size-text-lg);
 }
 
+.hero-buttons {
+  display: flex;
+  gap: 1.5rem;
+  margin-top: 4rem;
+}
+
 .main-btn {
   background-color: var(--red-500);
   color: var(--white-50);
@@ -45,5 +52,95 @@
   justify-content: center;
   padding: 0.8rem;
   text-decoration: none;
-  font-size: var(--font-size-text-md);
+  font-size: var(--font-size-text-lg);
+}
+
+.outline-btn {
+  width: 220px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.8rem;
+  text-decoration: none;
+  font-size: var(--font-size-text-lg);
+  border: 1px solid var(--red-500);
+  color: var(--red-500);
+  background-color: var(--white-50);
+}
+
+.icons {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 10rem;
+  width: 100%;
+  max-width: 1000px;
+  position: relative;
+}
+
+.icon-box {
+  background-color: var(--white-50);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 90px;
+  height: 90px;
+  border-radius: 1.5rem;
+  box-shadow:
+    -163px 176px 67px 0 rgba(0, 0, 0, 0),
+    -104px 112px 61px 0 rgba(0, 0, 0, 0.01),
+    -59px 63px 52px 0 rgba(0, 0, 0, 0.03),
+    -26px 28px 38px 0 rgba(0, 0, 0, 0.06),
+    -7px 7px 21px 0 rgba(0, 0, 0, 0.06);
+}
+
+.first,
+.fourth {
+  position: relative;
+  top: 6rem;
+}
+
+.metrics-slider {
+  width: 100%;
+  background-color: var(--red-500);
+  overflow: hidden;
+}
+
+.slider-wrapper {
+  display: flex;
+  width: max-content;
+  animation: infiniteSlider 20s linear infinite;
+}
+
+.slider-group {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  gap: 2.5rem;
+  padding: 1rem 1.25rem;
+  min-width: 100vw;
+  box-sizing: border-box;
+  flex-shrink: 0;
+}
+
+.wrapper-item {
+  display: flex;
+  align-items: center;
+  gap: 2.5rem;
+  flex-shrink: 0;
+  white-space: nowrap;
+  margin: 0;
+  color: white;
+  font-size: var(--font-size-text-lg);
+}
+
+@keyframes infiniteSlider {
+  to {
+    transform: translateX(-50%);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .slider-wrapper {
+    animation: none;
+  }
 }

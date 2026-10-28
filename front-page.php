@@ -8,12 +8,53 @@
 
             <div class="hero-buttons">
                 <a href="#" class="main-btn">Ver planes</a>
-                <a href="#" class="outline-btn">Ver planes</a>
+                <a href="#" class="outline-btn">Contacto</a>
 
             </div>
         </div>
 
+        <div class="icons">
+            <div class="icon-box first">
+                <img class="icon" src="<?php echo esc_url(get_theme_file_uri('assets/img/svg/carrito.svg')) ?>" alt="">
+            </div>
+            <div class="icon-box second">
+                <img class="icon" src="<?php echo esc_url(get_theme_file_uri('assets/img/svg/carrito.svg')) ?>" alt="">
+            </div>
+            <div class="icon-box third">
+                <img class="icon" src="<?php echo esc_url(get_theme_file_uri('assets/img/svg/carrito.svg')) ?>" alt="">
+            </div>
+            <div class="icon-box fourth">
+                <img class="icon" src="<?php echo esc_url(get_theme_file_uri('assets/img/svg/carrito.svg')) ?>" alt="">
+            </div>
+
+
+        </div>
+
     </section>
+
+    <section class="metrics-slider">
+        <div class="slider-wrapper">
+            <div class="slider-group">
+                <p class="wrapper-item">Hosting Web</p>
+                <p class="wrapper-item">Servidores VPS</p>
+                <p class="wrapper-item">Seguridad 24/7</p>
+                <p class="wrapper-item">Data Center</p>
+                <p class="wrapper-item">Dominios</p>
+                <p class="wrapper-item">Soporte Técnico</p>
+            </div>
+
+            <div class="slider-group" aria-hidden="true">
+                <p class="wrapper-item">Hosting Web</p>
+                <p class="wrapper-item">Servidores VPS</p>
+                <p class="wrapper-item">Seguridad 24/7</p>
+                <p class="wrapper-item">Data Center</p>
+                <p class="wrapper-item">Dominios</p>
+                <p class="wrapper-item">Soporte Técnico</p>
+            </div>
+        </div>
+    </section>
+
+
 
 
 </main>
