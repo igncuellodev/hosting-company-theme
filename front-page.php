@@ -135,32 +135,8 @@
 
 
     <section class="traits-section">
-        <div class="traits-wrapper">
-            <article class="trait-card scroll-animate">
-                <h5 class="trait-title">Transferencias <span class="red-highlight">Ilimitadas</span></h5>
-                <p class="traits-text">Disfruta de transferencias ilimitadas en todos nuestros planes de hosting, sin complicaciones.</p>
-            </article>
-            <article class="trait-card scroll-animate">
-                <h5 class="trait-title">Integración con <span class="red-highlight">Wordpress</span></h5>
-                <p class="traits-text">Todos nuestros planes de hosting incluyen WordPress para crear tu sitio web de forma sencilla.</p>
-            </article>
-            <article class="trait-card scroll-animate">
-                <h5 class="trait-title">Cloud <span class="red-highlight">Hosting</span></h5>
-                <p class="traits-text">Disfruta de gran velocidad y soporte especializado para mantener tu sitio web siempre estable.</p>
-            </article>
-            <article class="trait-card scroll-animate">
-                <h5 class="trait-title"><span class="red-highlight">Dominio</span> para tu sitio</h5>
-                <p class="traits-text">Registra un dominio nuevo o configura el que ya tienes para poner tu página web en marcha hoy.</p>
-            </article>
-            <article class="trait-card scroll-animate">
-                <h5 class="trait-title"><span class="red-highlight">E-commerce</span> Hosting</h5>
-                <p class="traits-text">Impulsa ya tu negocio con tecnología confiable y herramientas pensadas para crecer junto a ti.</p>
-            </article>
-            <article class="trait-card scroll-animate">
-                <h5 class="trait-title"><span class="red-highlight">Re-seller</span> Hosting</h5>
-                <p class="traits-text">Crea tu tienda online con nuestras soluciones para ecommerce y empieza a vender con facilidad.</p>
-            </article>
 
+        <div id="trait-wrapper" class="traits-wrapper">
         </div>
 
     </section>
