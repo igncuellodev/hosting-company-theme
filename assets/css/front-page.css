@@ -109,6 +109,7 @@
   display: flex;
   width: max-content;
   animation: infiniteSlider 20s linear infinite;
+  animation-play-state: paused;
 }
 
 .slider-group {
@@ -138,6 +139,70 @@
     transform: translateX(-50%);
   }
 }
+
+
+.web-hosting-plans-section{
+  padding: 2rem 0rem;
+  height: fit-content;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 8rem;
+}
+
+.plans-wrapper{
+  width: 100%;
+  max-width: 1280px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 5.625rem;
+}
+.plans-text{
+  width: 100%;
+  max-width: 680px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.h2-titles{
+  color: var(--dark-500);
+  font-size: var(--font-size-h2);
+}
+
+.red-highlight{
+  color: var(--red-500);
+}
+
+.dark-text{
+  font-size: var(--font-size-text-lg);
+  text-align: center;
+}
+
+.plans{
+  width: 100%;
+  max-width: 1280px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 1.5rem;
+}
+
+.plan-card{
+  border: 1px solid var(--white-600);
+  padding: 2rem;
+  
+}
+
+.plan-divider{
+  border-top: var(--white-600);
+}
+
+
 
 @media (prefers-reduced-motion: reduce) {
   .slider-wrapper {

@@ -54,6 +54,39 @@
         </div>
     </section>
 
+    <section class="web-hosting-plans-section">
+        <div class="plans-wrapper">
+            <div class="plans-text">
+                <h2 class="h2-titles scroll-animate">Escoge tu <span class="red-highlight">Plan de Hosting</span></h2>
+                <p class="dark-text scroll-animate">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Blanditiis, aliquid. Similique at, impedit pariatur quis, voluptas hic necessitatibus corporis, debitis odit officiis velit iure culpa blanditiis eum? Quisquam, sunt ea.</p>
+            </div>
+
+            <div class="plans">
+                <article class="plan-card">
+                    <h3 class="plan-name">
+                        Hosting Starter
+                    </h3>
+                    <h4 class="price">$7.000<span>/Anual + IVA</span></h4>
+                    <hr class="plan-divider">
+                    <a href="" class="outline-btn2">Contratar</a>
+
+                    <ul class="plan-specs">
+                        <li class="spec"><img class="spec-icon" src="<?php echo esc_url(get_theme_file_uri('assets/img/svg/ssd.svg')) ?>" alt="">7 GB SSD</li>
+                        <li class="spec"><img class="spec-icon" src="<?php echo esc_url(get_theme_file_uri('assets/img/svg/website.svg')) ?>" alt="">1 Sitio Web</li>
+                        <li class="spec"><img class="spec-icon" src="<?php echo esc_url(get_theme_file_uri('assets/img/svg/email.svg')) ?>" alt="">Emails Ilimitados</li>
+                        <li class="spec"><img class="spec-icon" src="<?php echo esc_url(get_theme_file_uri('assets/img/svg/db.svg')) ?>" alt="">1 Base de datos</li>
+                        <li class="spec"><img class="spec-icon" src="<?php echo esc_url(get_theme_file_uri('assets/img/svg/ssl.svg')) ?>" alt="">Certficado SSL Gratis</li>
+
+
+                    </ul>
+
+                </article>
+            </div>
+
+        </div>
+
+    </section>
+
 
 
 
