@@ -50,7 +50,6 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 0.8rem;
   text-decoration: none;
   font-size: var(--font-size-text-lg);
 }
@@ -190,18 +189,104 @@
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   gap: 1.5rem;
+  margin-top: 3rem;
 }
 
 .plan-card{
   border: 1px solid var(--white-600);
   padding: 2rem;
+  border-radius: 2rem;
+  position: relative;
   
 }
 
-.plan-divider{
-  border-top: var(--white-600);
+.bottom{
+  position: relative;
+  top: 100px;
 }
 
+.recommended{
+  background: linear-gradient(0deg, rgba(227, 30, 37, 0.10) 0.12%, rgba(255, 255, 255, 0.10) 57.52%);
+}
+
+.recommended-tag{
+  background-color: var(--red-500);
+  width: fit-content;
+  position: relative;
+  top: -70px;
+  padding: 0.5rem 2rem;
+  border-radius: 01rem 01rem 0rem 0rem;
+  color: var(--white-50);
+}
+
+.plan-name{
+  font-size: var(--font-size-h4);
+  font-weight: 600;
+}
+
+.price{
+  font-size: var(--font-size-h3);
+  font-weight: 600;
+  color: var(--red-500);
+}
+
+h4.price > span.yearly {
+  font-size: var(--font-size-text-md);
+  font-weight: 400;
+  color: var(--dark-100);
+}
+
+.monthly{
+  color: var(--dark-100);
+  margin-bottom: 2rem;
+}
+
+
+.plan-divider{
+  border-top: var(--white-600);
+  margin-bottom: 1.5rem;
+}
+
+.red-btn{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  background-color: var(--red-500);
+  color: var(--white-50);
+  text-decoration: none;
+  padding: 0.8rem;
+  margin-bottom: 2rem;
+  font-size: var(--font-size-text-lg);
+
+}
+
+.outline-btn2{
+  margin-bottom: 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  background-color: transparent;
+  color: var(--red-500);
+  text-decoration: none;
+  border: 1px solid var(--red-500);
+  padding: 0.8rem;
+  font-size: var(--font-size-text-lg);
+}
+.plan-specs{
+  display: flex;
+  list-style-type: none;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.spec{
+  display: flex;
+  align-items: center;
+  gap: 0.8rem;
+  font-size: var(--font-size-text-md);
+}
 
 
 @media (prefers-reduced-motion: reduce) {

@@ -62,11 +62,57 @@
             </div>
 
             <div class="plans">
-                <article class="plan-card">
+                <article class="plan-card bottom scroll-animate">
                     <h3 class="plan-name">
-                        Hosting Starter
+                        Hosting <span class="red-highlight">Starter</span>
                     </h3>
-                    <h4 class="price">$7.000<span>/Anual + IVA</span></h4>
+                    <h4 class="price">$7.000<span class="yearly">/Anual + IVA</span></h4>
+                    <p class="monthly">Desde $583 por mes*</p>
+                    <hr class="plan-divider">
+                    <a href="" class="outline-btn2">Contratar</a>
+
+                    <ul class="plan-specs">
+                        <li class="spec"><img class="spec-icon" src="<?php echo esc_url(get_theme_file_uri('assets/img/svg/ssd.svg')) ?>" alt="">7 GB SSD</li>
+                        <li class="spec"><img class="spec-icon" src="<?php echo esc_url(get_theme_file_uri('assets/img/svg/website.svg')) ?>" alt="">1 Sitio Web</li>
+                        <li class="spec"><img class="spec-icon" src="<?php echo esc_url(get_theme_file_uri('assets/img/svg/email.svg')) ?>" alt="">Emails Ilimitados</li>
+                        <li class="spec"><img class="spec-icon" src="<?php echo esc_url(get_theme_file_uri('assets/img/svg/db.svg')) ?>" alt="">1 Base de datos</li>
+                        <li class="spec"><img class="spec-icon" src="<?php echo esc_url(get_theme_file_uri('assets/img/svg/ssl.svg')) ?>" alt="">Certficado SSL Gratis</li>
+
+
+                    </ul>
+
+                </article>
+
+
+                <article class="plan-card recommended scroll-animate">
+                    <div class="recommended-tag">Recomendado</div>
+                    <h3 class="plan-name">
+                        Hosting <span class="red-highlight">Starter</span>
+                    </h3>
+                    <h4 class="price">$7.000<span class="yearly">/Anual + IVA</span></h4>
+                    <p class="monthly">Desde $583 por mes*</p>
+                    <hr class="plan-divider">
+                    <a href="" class="red-btn">Contratar</a>
+
+                    <ul class="plan-specs">
+                        <li class="spec"><img class="spec-icon" src="<?php echo esc_url(get_theme_file_uri('assets/img/svg/ssd.svg')) ?>" alt="">7 GB SSD</li>
+                        <li class="spec"><img class="spec-icon" src="<?php echo esc_url(get_theme_file_uri('assets/img/svg/website.svg')) ?>" alt="">1 Sitio Web</li>
+                        <li class="spec"><img class="spec-icon" src="<?php echo esc_url(get_theme_file_uri('assets/img/svg/email.svg')) ?>" alt="">Emails Ilimitados</li>
+                        <li class="spec"><img class="spec-icon" src="<?php echo esc_url(get_theme_file_uri('assets/img/svg/db.svg')) ?>" alt="">1 Base de datos</li>
+                        <li class="spec"><img class="spec-icon" src="<?php echo esc_url(get_theme_file_uri('assets/img/svg/ssl.svg')) ?>" alt="">Certficado SSL Gratis</li>
+
+
+                    </ul>
+
+                </article>
+
+
+                <article class="plan-card bottom scroll-animate">
+                    <h3 class="plan-name">
+                        Hosting <span class="red-highlight">Starter</span>
+                    </h3>
+                    <h4 class="price">$7.000<span class="yearly">/Anual + IVA</span></h4>
+                    <p class="monthly">Desde $583 por mes*</p>
                     <hr class="plan-divider">
                     <a href="" class="outline-btn2">Contratar</a>
 
