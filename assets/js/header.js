@@ -31,7 +31,6 @@ function closeDropdown() {
 
 menuBars.addEventListener("click", openSideMenu);
 closeMenu.addEventListener("click", closeSideMenu);
-responsiveOverlay.addEventListener("click", closeSideMenu);
 dropdownBtn.addEventListener("mouseenter", openDropdown);
 dropdownBtn.addEventListener("mouseleave", closeDropdown);
 dropDownList.addEventListener("mouseleave", closeDropdown);

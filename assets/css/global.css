@@ -237,6 +237,10 @@ nav {
   flex-direction: column;
 }
 
+.servicios {
+  font-size: var(--font-size-text-lg);
+}
+
 @media (min-width: 300px) {
   header {
     padding: 0rem 1rem;

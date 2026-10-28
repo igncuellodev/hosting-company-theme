@@ -79,7 +79,7 @@
                             <li><img src="<?php echo esc_url(get_theme_file_uri('./assets/img/svg/logo-hosting-company.svg'));?>" alt=""></li>
                             <li><a class="nav-link" href="/servidores-vps">Servidores VPS</a></li>
                             <li><a class="nav-link" href="/web-hosting">Web Hosting</a></li>
-                            <li class="nav-link">Servicios
+                            <li class="servicios">Servicios
                                 <ul class="side-servicios">
                                     <li class="side-link">Cloud Data Center</li>
                                     <li class="side-link">2FA</li>
