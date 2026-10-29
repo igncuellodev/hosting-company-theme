@@ -334,6 +334,46 @@ gap: 0.8rem;
 }
 
 
+.wordpress-section{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 128px;
+
+}
+
+.wp-wrapper{
+  width: 100%;
+  max-width: 1280px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 5rem;
+}
+
+.dashboard-image{
+  border-radius: 1rem;
+}
+
+.wp-subtitle{
+  font-size: var(--font-size-h6);
+  margin-top: 0.5rem;
+}
+
+.left{
+  text-align: left;
+  margin-top: 2rem;
+}
+
+.faq-section{
+  margin-top: 128px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
 
 @media (prefers-reduced-motion: reduce) {
   .slider-wrapper {

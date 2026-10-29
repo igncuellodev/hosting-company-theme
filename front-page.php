@@ -142,6 +142,35 @@
     </section>
 
 
+    <section class="wordpress-section">
+        <div class="wp-wrapper">
+            <div class="wp-text-content">
+                <h2 class="h2-titles scroll-animate">¿Buscando <span class="red-highlight">Wordpress?</span></h2>
+                <h5 class="wp-subtitle scroll-animate">En Hostingcompany ofrecemos opciones de alojamiento especiales para sitios web de WordPress y WooCommerce.</h5>
+                <p class="dark-text left scroll-animate">Haga que su sitio web de WordPress comience bien con el análisis del sitio, gestión de tráfico, seguridad y copias de seguridad, todo junto en un paquete completo de WordPress.</p>
+
+            </div>
+
+            <div class="wp-img-content">
+                <img src="<?php echo esc_url(get_theme_file_uri('assets/img/webp/wp-dashboard.webp')) ?>" width="694" alt="" class="dashboard-image scroll-animate">
+
+            </div>
+        </div>
+    </section>
+
+
+    <section class="faq-section">
+        <h2 class="h2-titles"><span class="red-highlight">Preguntas</span> frecuentes</h2>
+        <p class="dark-text">Conoce más de Hosting Company con algunas de las preguntas que más realizan los usuarios antes de contratar nuestra solución</p>
+
+        <div id="faqs">
+
+        </div>
+
+
+    </section>
+
+
 
 
 </main>

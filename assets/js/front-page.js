@@ -3,7 +3,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
   const floating = ".first, .second, .third, .fourth";
 
-  // Animaciones de entrada
+  
   gsap.from(`.hero-title, .hero-text, .main-btn, .outline-btn, ${floating}`, {
     y: 80,
     opacity: 0,
@@ -12,7 +12,7 @@ document.addEventListener("DOMContentLoaded", () => {
     stagger: 0.15,
 
     onComplete: () => {
-      // Animación flotante infinita
+  
       gsap.to(floating, {
         y: -15,
         duration: 2,
@@ -23,8 +23,6 @@ document.addEventListener("DOMContentLoaded", () => {
       });
     },
   });
-
-  // Animaciones con ScrollTrigger
   gsap.utils.toArray(".scroll-animate").forEach((element) => {
     gsap.from(element, {
       y: 100,
@@ -116,3 +114,58 @@ for(const trait of traitsList){
 
 TraitsCreation(traits)
 
+
+
+const faqs = [
+  
+{
+  question: "¿Qué es Hosting o alojamiento web?",
+  answer: "El alojamiento web es el servicio que permite visualizar un sitio web o blog en Internet. El alojamiento es una forma en que los sitios web pueden compartir espacio web y ancho de banda con los visitantes. Los hosts normalmente brindan espacio de almacenamiento para páginas web, servidores de correo para cuentas de correo electrónico y sockets para FTP."
+},
+
+{
+  question: "¿Puedo elegir cualquier período de pago que desee?",
+  answer: "Para nuestros planes de hosting principales aceptamos pagos anuales, puedes contratar 2, 3, 4 años o mas comunicandote con el departamento de ventas."
+
+},
+
+{
+  question: "¿Puedo instalar aplicaciones automáticamente?",
+  answer: "Puede instalar aplicaciones a través de nuestro cPanel, con solo hacer clic en un botón. También puede programar cuándo y con qué frecuencia crea copias de seguridad de sus sitios."
+},
+{
+  question: "¿Cómo puedo acceder a mi constructor de sitios web?",
+  answer: "Puedes acceder y seleccionar tu constructor de sitios web desde el cPanel con softaculous."
+},
+
+{
+  question: "¿Cómo accesar a cPanel?",
+  answer: "Puede accesar a su cPanel desde el área de clientes de hostingcompany."
+},
+
+{
+  question: "¿Puedo instalar aplicaciones automáticamente?",
+  answer: "Es un sistema operativo construido especialmente para empresas de hosting compartido, este ultimo se encarga de mejorar la seguridad en los sistemas y servicios. El factor importante de Cloudlinux en el mercado es que permite ajustar los servicios de hosting con limites en CPU, memoria RAM, acceso a disco, cantidad de archivos, limites en peticiones de php y otros que hacen de este sistema uno de los más usados para estos fines.",},
+]
+
+
+
+function CreateFaq(faqs){
+  const faqsDiv = document.getElementById("faqs")
+  for(const faq of faqs){
+    const faqDetail = document.createElement("details")
+    const summary = document.createElement("summary")
+    const pAnswer = document.createElement("p")
+
+    summary.textContent = faq.question;
+    pAnswer.textContent = faq.answer;
+
+    faqDetail.appendChild(summary)
+    faqDetail.appendChild(pAnswer)
+    faqsDiv.appendChild(faqDetail)
+
+  }
+}
+
+
+CreateFaq(faqs)
