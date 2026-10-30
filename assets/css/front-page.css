@@ -57,6 +57,7 @@
   justify-content: center;
   text-decoration: none;
   font-size: var(--font-size-text-lg);
+  padding: 0.8rem;
 }
 
 .outline-btn {
@@ -302,6 +303,7 @@ h4.price > span.yearly {
   display: flex;
   justify-content: center;
   align-items: center;
+  background-size: cover;
 }
 
 .traits-wrapper{
@@ -644,5 +646,186 @@ backdrop-filter: blur(2.75px);;
 @media (prefers-reduced-motion: reduce) {
   .slider-wrapper {
     animation: none;
+  }
+}
+
+
+@media (min-width: 300px){
+
+  .icons{
+    margin-top: 4rem;
+  }
+
+  .first, .fourth{
+    top: 60px;
+  }
+
+  .icon-box{
+    width: 75px;
+    height: 75px;
+  }
+
+  .hero-section{
+    height: fit-content;
+    padding: 10rem 1rem;
+  }
+
+  .hero-title{
+    text-align: center;
+  }
+
+
+
+  .hero-buttons{
+    flex-direction: column;
+    width: 100%;
+  }
+
+
+  .main-btn{
+    width: 100%;
+  }
+  
+  .outline-btn{
+    width: 100%;
+  }
+
+
+  .faq-section{
+    padding: 1rem;
+  }
+
+  .wp-wrapper{
+    flex-direction: column;
+  }
+
+  .plans-wrapper{
+    gap: 0;
+  }
+
+  .plans{
+    display: flex;
+    flex-direction: column;
+    margin-top: 0px;
+    padding: 1rem;
+    margin-top: 3rem;
+
+  }
+
+  .bottom{
+    top: 0px;
+    order: 0;
+  }
+
+  .recommended{
+    order: -1;
+  }
+
+  .traits-section{
+    height: fit-content;
+    border-radius: 2rem 2rem 0rem 0rem;
+    padding: 1rem 1rem;
+    background-size: cover;
+  }
+
+  .traits-wrapper{
+    display: flex;
+    flex-direction: column;
+    height: fit-content;
+
+  }
+  
+
+  .wordpress-section{
+    padding: 1rem;
+    margin-top: 0;
+  }
+
+  .dashboard-image{
+    width: 100%;
+  }
+}
+
+
+@media (min-width: 720px){
+  .traits-wrapper{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+
+  }
+
+
+  .traits-section{
+    height: 900px;
+  }
+
+
+}
+
+@media (min-width: 1020px){
+
+  .hero-section{
+    height: 1000px;
+    padding-top: 13rem;
+
+  }
+
+  .hero-buttons{
+    flex-direction: row;
+    justify-content: center;
+  }
+
+  .main-btn, .outline-btn{
+    width: 200px;
+  }
+
+  .wordpress-section{
+    margin-top: 8rem;
+  }
+  .wp-wrapper{
+    flex-direction: row;
+  }
+
+  .traits-section{
+    height: 670px;
+    border-radius: 5rem 5rem 0rem 0rem;
+  }
+
+  .traits-wrapper{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    height: 440px;
+  }
+
+  .dashboard-image{
+    width: 694px;
+  }
+
+  .bottom{
+  position: relative;
+  top: 100px;
+  order: 0;
+}
+
+.plans{
+  display: grid;
+  margin-top: 6rem;
+}
+
+.recommended{
+  order: 0;
+}
+
+.icons{
+    margin-top: 10rem;
+  }
+
+  .first, .fourth{
+    top: 6rem;
+  }
+
+  .icon-box{
+    width: 90px;
+    height: 90px;
   }
 }

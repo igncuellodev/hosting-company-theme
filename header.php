@@ -14,10 +14,10 @@
 
     <header>
         <nav>
-            <a href="<?php echo esc_url(home_url('/')); ?>">
+            <a href="<?php echo esc_url(home_url('/')); ?>" class="logo-wrapper">
                 <img
                     src="<?php echo esc_url(get_theme_file_uri('/assets/img/svg/logo-hosting-company.svg')); ?>"
-                    alt="Hosting company logo" class="hosting-company-logo">
+                    alt="Hosting company logo" width="175">
             </a>
 
             <ul class="nav-list">
@@ -76,7 +76,7 @@
 
 
                         <ul class="sidebar-list">
-                            <li><img src="<?php echo esc_url(get_theme_file_uri('./assets/img/svg/logo-hosting-company.svg'));?>" alt=""></li>
+                            <li><img src="<?php echo esc_url(get_theme_file_uri('./assets/img/svg/logo-hosting-company.svg')); ?>" alt=""></li>
                             <li><a class="nav-link" href="/servidores-vps">Servidores VPS</a></li>
                             <li><a class="nav-link" href="/web-hosting">Web Hosting</a></li>
                             <li class="servicios">Servicios
@@ -91,7 +91,7 @@
                             </li>
                             <li><a class="nav-link" href="/pago">Pago</a></li>
                             <li><a class="featured-link" href="https://clientes.hostingcompany.cl/index.php?rp=/login">Clientes</a></li>
-                            
+
 
                         </ul>
                     </div>
