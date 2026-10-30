@@ -146,13 +146,13 @@
         <div class="wp-wrapper">
             <div class="wp-text-content">
                 <h2 class="h2-titles scroll-animate">¿Buscando <span class="red-highlight">Wordpress?</span></h2>
-                <h5 class="wp-subtitle scroll-animate">En Hostingcompany ofrecemos opciones de alojamiento especiales para sitios web de WordPress y WooCommerce.</h5>
+                <p class="wp-subtitle scroll-animate">En Hostingcompany ofrecemos opciones de alojamiento especiales para sitios web de WordPress y WooCommerce.</p>
                 <p class="dark-text left scroll-animate">Haga que su sitio web de WordPress comience bien con el análisis del sitio, gestión de tráfico, seguridad y copias de seguridad, todo junto en un paquete completo de WordPress.</p>
 
             </div>
 
             <div class="wp-img-content">
-                <img src="<?php echo esc_url(get_theme_file_uri('assets/img/webp/wp-dashboard.webp')) ?>" width="694" alt="" class="dashboard-image scroll-animate">
+                <img src="<?php echo esc_url(get_theme_file_uri('assets/img/webp/wp-dashboard.webp')) ?>" width="694" loading="lazy" alt="Imagen dashboard de wordpress" class="dashboard-image scroll-animate">
 
             </div>
         </div>
@@ -160,15 +160,103 @@
 
 
     <section class="faq-section">
-        <h2 class="h2-titles"><span class="red-highlight">Preguntas</span> frecuentes</h2>
-        <p class="dark-text">Conoce más de Hosting Company con algunas de las preguntas que más realizan los usuarios antes de contratar nuestra solución</p>
+        <div class="faq-text-content">
+            <h2 class="h2-titles"><span class="red-highlight">Preguntas</span> frecuentes</h2>
+            <p class="dark-text">Conoce más de Hosting Company con algunas de las preguntas que más realizan los usuarios antes de contratar nuestra solución</p>
 
+        </div>
         <div id="faqs">
 
         </div>
 
 
     </section>
+
+
+
+
+    <?php
+    $posts_query = new WP_Query([
+        'post_type'           => 'post',
+        'posts_per_page'      => 3,
+        'post_status'         => 'publish',
+        'ignore_sticky_posts' => true
+    ]);
+    ?>
+
+    <section class="blog-section">
+
+        <div class="blog-container">
+
+            <h2 class="h2-titles w-full">Últimas <span class="red-highlight">publicaciones</span></h2>
+
+            <?php if ($posts_query->have_posts()) : ?>
+
+                <div class="blog-grid">
+
+                    <?php while ($posts_query->have_posts()) :
+                        $posts_query->the_post();
+                        $categories = get_the_category();
+                    ?>
+
+                        <article class="blog-card scroll-animate">
+
+                            <a href="<?php echo esc_url(get_permalink()); ?>"
+                                class="blog-card-link">
+
+                                <div class="blog-card-image">
+
+                                    <?php if (has_post_thumbnail()) : ?>
+                                        <?php the_post_thumbnail('medium_large', ['loading' => 'lazy']); ?>
+                                    <?php endif; ?>
+
+                                    <?php if (!empty($categories)) : ?>
+                                        <span class="blog-card-category">
+                                            <?php echo esc_html($categories[0]->name); ?>
+                                        </span>
+                                    <?php endif; ?>
+
+                                </div>
+
+                                <div class="blog-card-content">
+
+                                    <h3 class="blog-card-title">
+                                        <?php echo esc_html(get_the_title()); ?>
+                                    </h3>
+
+                                    <p class="blog-card-description">
+                                        <?php
+                                        echo esc_html(
+                                            wp_trim_words(get_the_excerpt(), 20)
+                                        );
+                                        ?>
+                                    </p>
+
+                                    <span class="blog-card-more">
+                                        Leer más
+                                    </span>
+
+                                </div>
+
+                            </a>
+
+                        </article>
+
+                    <?php endwhile; ?>
+
+                </div>
+
+            <?php else : ?>
+
+                <p>No hay publicaciones disponibles.</p>
+
+            <?php endif; ?>
+
+        </div>
+
+    </section>
+
+    <?php wp_reset_postdata(); ?>
 
 
 
