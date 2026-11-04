@@ -1,3 +1,87 @@
-.web-hosting{
-    
+.web-hosting-hero {
+    height: 100vh;
+    padding: 1rem;
+
+}
+
+.hero-img-container {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: end;
+    background-image: url("../img/webp/webh-hero.webp");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    border-radius: 1.5rem;
+    padding: 3.75rem;
+}
+
+.hero-intro-wrapper {
+    width: 100%;
+    max-width: 1280px;
+}
+
+
+.hero-intro {
+    border-radius: 2rem;
+    background: rgba(28, 29, 42, 0.54);
+    backdrop-filter: blur(3.9000000953674316px);
+    width: 100%;
+    max-width: 662px;
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    gap: 3.75rem;
+}
+
+.hero-text-content {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.plans-section{
+    display: flex;
+    justify-content: center;
+    margin-top: 8rem;
+}
+
+.hero-title {
+    font-size: var(--font-size-h1);
+    color: var(--white-50);
+}
+
+.hero-text {
+    color: var(--white-50);
+    font-size: var(--font-size-text-lg);
+}
+
+.plans-wrapper {
+    width: 100%;
+    max-width: 1280px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 6rem;
+}
+
+#plans-grid {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 1.25rem;
+}
+
+.plans-text-wrapper{
+    width: 100%;
+    max-width: 700px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    gap: 1rem;
 }

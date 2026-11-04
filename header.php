@@ -21,8 +21,8 @@
             </a>
 
             <ul class="nav-list">
-                <li><a class="nav-link" href="/servidores-vps">Servidores VPS</a></li>
                 <li><a class="nav-link" href="/web-hosting">Web Hosting</a></li>
+                <li><a class="nav-link" href="/servidores-vps">Servidores VPS</a></li>
                 <li id="dropdown">Servicios
                     <ul class="dropdown-list">
                         <li><a class="nav-link" href="/cloud-data-center">Cloud Data Center</a></li>

@@ -24,6 +24,17 @@ function hosting_scripts()
             filemtime($front_js),
             true
         );
+    } else if (is_page('web-hosting')) {
+        $web_hosting_script = get_template_directory() . '/assets/js/web-hosting.js';
+
+        wp_enqueue_script(
+            'web_hosting_script',
+            get_template_directory_uri() . '/assets/js/web-hosting.js',
+            array(),
+            filemtime($web_hosting_script),
+            true
+
+        );
     }
 }
 
@@ -62,7 +73,7 @@ function hosting_styles()
             filemtime($servidores_css),
             'all'
         );
-    } else if (is_page_template('page-web-hosting.php')) {
+    } else if (is_page('web-hosting')) {
         $web_hosting_css = get_template_directory() . '/assets/css/web-hosting.css';
 
         wp_enqueue_style(
@@ -83,8 +94,6 @@ function theme_gsap_script()
     wp_enqueue_script('gsap-js', 'https://cdn.jsdelivr.net/npm/gsap@3.15/dist/gsap.min.js', array(), false, true);
     // ScrollTrigger - with gsap.js passed as a dependency
     wp_enqueue_script('gsap-st', 'https://cdn.jsdelivr.net/npm/gsap@3.15/dist/ScrollTrigger.min.js', array('gsap-js'), false, true);
-    // Your animation code file - with gsap.js passed as a dependency
-    wp_enqueue_script('gsap-js2', get_template_directory_uri() . 'js/app.js', array('gsap-js'), false, true);
 }
 
 add_action('wp_enqueue_scripts', 'hosting_scripts');
