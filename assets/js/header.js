@@ -34,3 +34,23 @@ closeMenu.addEventListener("click", closeSideMenu);
 dropdownBtn.addEventListener("mouseenter", openDropdown);
 dropdownBtn.addEventListener("mouseleave", closeDropdown);
 dropDownList.addEventListener("mouseleave", closeDropdown);
+
+
+
+document.addEventListener("DOMContentLoaded", () => {
+  gsap.registerPlugin(ScrollTrigger);
+
+  gsap.utils.toArray(".scroll-animate").forEach((element) => {
+    gsap.from(element, {
+      y: 100,
+      opacity: 0,
+      duration: 0.6,
+      ease: "power1.out",
+      scrollTrigger: {
+        trigger: element,
+        start: "top 80%",
+        once: true,
+      },
+    });
+  });
+});

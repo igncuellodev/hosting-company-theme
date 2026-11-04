@@ -4,7 +4,6 @@ function hosting_scripts()
 {
 
     $header_js = get_template_directory() . '/assets/js/header.js';
-    $front_js  = get_template_directory() . '/assets/js/front-page.js';
 
     wp_enqueue_script(
         'hosting-header',
@@ -14,13 +13,18 @@ function hosting_scripts()
         true
     );
 
-    wp_enqueue_script(
-        'hosting-front',
-        get_template_directory_uri() . '/assets/js/front-page.js',
-        array(),
-        filemtime($front_js),
-        true
-    );
+    if (is_front_page()) {
+
+        $front_js  = get_template_directory() . '/assets/js/front-page.js';
+
+        wp_enqueue_script(
+            'hosting-front',
+            get_template_directory_uri() . '/assets/js/front-page.js',
+            array(),
+            filemtime($front_js),
+            true
+        );
+    }
 }
 
 
@@ -56,6 +60,16 @@ function hosting_styles()
             get_template_directory_uri() . '/assets/css/servidores.css',
             array('hosting-global'),
             filemtime($servidores_css),
+            'all'
+        );
+    } else if (is_page_template('page-web-hosting.php')) {
+        $web_hosting_css = get_template_directory() . '/assets/css/web-hosting.css';
+
+        wp_enqueue_style(
+            'web-hosting-css',
+            get_template_directory_uri() . '/assets/css/web-hosting.css',
+            array('hosting-global'),
+            filemtime($web_hosting_css),
             'all'
         );
     }
