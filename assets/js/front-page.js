@@ -145,7 +145,7 @@ function CreateFaq(faqs){
     const summary = document.createElement("summary")
     const pAnswer = document.createElement("p")
 
-    faqDetail.classList.add("faq-content", "scroll-animate")
+    faqDetail.classList.add("faq-content")
     pAnswer.classList.add("answer-text")
     summary.classList.add("question");
 

@@ -46,24 +46,24 @@ Template Name: Web Hosting
             <img src="<?php echo esc_url(get_theme_file_uri('./assets/img/webp/characteristics.webp')) ?>" class="characteristics-img" alt="">
             <div class="characteristics">
                 <div class="characteristics-text">
-                    <h2 class="h2-titles"><span class="highlight">Caracteristicas</span> de los hostings</h2>
-                    <p class="dark-text left">Nuestro paquete de alojamiento le ofrece la posibilidad de crear un sitio web hosting y la libertad de elegir su propio nombre de dominio. </p>
+                    <h2 class="h2-titles animation"><span class="highlight">Caracteristicas</span> de los hostings</h2>
+                    <p class="dark-text animation2">Nuestro paquete de alojamiento le ofrece la posibilidad de crear un sitio web hosting y la libertad de elegir su propio nombre de dominio. </p>
                 </div>
 
 
                 <div class="lists-characteristics-wrapper">
                     <ul class="list-characteristics">
-                        <li class="characteristic">Wordpress</li>
-                        <li class="characteristic">Datacenter en Chile</li>
-                        <li class="characteristic">Tecnología SSD</li>
-                        <li class="characteristic">Certificado SSL</li>
+                        <li class="characteristic char1"><img src="<?php echo esc_url(get_theme_file_uri('./assets/img/svg/wordpress.svg')) ?>" width="25" alt="">Wordpress</li>
+                        <li class="characteristic char2"><img src="<?php echo esc_url(get_theme_file_uri('./assets/img/svg/datacenter.svg')) ?>" width="25" alt="">Datacenter en Chile</li>
+                        <li class="characteristic char3"><img src="<?php echo esc_url(get_theme_file_uri('./assets/img/svg/ssd.svg')) ?>" width="25" alt="">Tecnología SSD</li>
+                        <li class="characteristic char4"><img src="<?php echo esc_url(get_theme_file_uri('./assets/img/svg/ssl.svg')) ?>" width="25" alt="">Certificado SSL</li>
                     </ul>
 
                     <ul class="list-characteristics">
-                        <li class="characteristic">Soporte especializado</li>
-                        <li class="characteristic">Trnasferencia ilimitada</li>
-                        <li class="characteristic">Seguridad</li>
-                        <li class="characteristic">Licencia cPanel</li>
+                        <li class="characteristic char5"><img src="<?php echo esc_url(get_theme_file_uri('./assets/img/svg/soporte.svg')) ?>" width="25" alt="">Soporte especializado</li>
+                        <li class="characteristic char6"><img src="<?php echo esc_url(get_theme_file_uri('./assets/img/svg/transferencia.svg')) ?>" width="25" alt="">Transferencia ilimitada</li>
+                        <li class="characteristic char7"><img src="<?php echo esc_url(get_theme_file_uri('./assets/img/svg/seguridad.svg')) ?>" width="25" alt="">Seguridad</li>
+                        <li class="characteristic char8"><img src="<?php echo esc_url(get_theme_file_uri('./assets/img/svg/licencia.svg')) ?>" width="25" alt="">Licencia cPanel</li>
                     </ul>
                 </div>
 
@@ -78,6 +78,20 @@ Template Name: Web Hosting
 
         <div id="trait-wrapper" class="traits-wrapper">
         </div>
+
+    </section>
+
+
+    <section class="faq-section">
+        <div class="faq-text-content">
+            <h2 class="h2-titles"><span class="highlight">Preguntas</span> frecuentes</h2>
+            <p class="dark-text">Conoce más de Hosting Company con algunas de las preguntas que más realizan los usuarios antes de contratar nuestra solución</p>
+
+        </div>
+        <div id="faqs">
+
+        </div>
+
 
     </section>
 

@@ -168,6 +168,9 @@ gap: 0.8rem;
 
 .characteristic{
   font-size: var(--font-size-h6);
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
 }
 
 
@@ -175,13 +178,13 @@ gap: 0.8rem;
 @media (min-width: 300px){
 
 
-  
-
-  .traits-section{
+    .traits-section{
     height: fit-content;
     border-radius: 2rem 2rem 0rem 0rem;
-    padding: 1rem 1rem;
+    padding: 1rem 1rem 5rem 1rem;
     background-size: cover;
+    background-position: center;
+    background: linear-gradient(180deg, rgba(255, 255, 255, 0.00) 0.34%, #FFF 100.32%), url("../img/webp/background-data.webp") lightgray 50% / cover no-repeat;
   }
 
   .traits-wrapper{
@@ -189,6 +192,20 @@ gap: 0.8rem;
     flex-direction: column;
     height: fit-content;
 
+  }
+
+
+  #plans-grid{
+    display: flex;
+    flex-direction: column;
+  }
+
+  .characteristics-content-wrapper{
+    flex-direction: column;
+  }
+
+  .lists-characteristics-wrapper{
+    flex-direction: column;
   }
 }
 
@@ -273,5 +290,17 @@ gap: 0.8rem;
   .icon-box{
     width: 90px;
     height: 90px;
+  }
+
+  .characteristics-content-wrapper{
+    flex-direction: row;
+  }
+
+  #plans-grid{
+    display: grid;
+  }
+
+  .lists-characteristics-wrapper{
+    flex-direction: row;
   }
 }
