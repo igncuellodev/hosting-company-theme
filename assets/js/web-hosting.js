@@ -1,4 +1,7 @@
 document.addEventListener("DOMContentLoaded", () => {
+
+    plansCreation(plans)
+    TraitsCreation(traits)
     gsap.from(".hero-title, .hero-text", 
         {
             opacity: 0,
@@ -6,15 +9,13 @@ document.addEventListener("DOMContentLoaded", () => {
             delay: 0.3,
             stagger: 0.40,
         
-        }
-    )
-})
+        });
 
 
-document.addEventListener("scroll", () => {
+
   gsap.to(".web-hosting-hero", {
     duration: 0.5,
-    scale: 0.95,
+    scale: 0.90,
     ease: "power1.out",
     scrollTrigger: {
         trigger: ".hero-img-container",
@@ -23,12 +24,51 @@ document.addEventListener("scroll", () => {
         scrub: true,
     }
 });
+
+
+
+
+gsap.from("#card1, #card2, #card3, #card4", {
+    opacity: 0,
+    y: 30,
+    duration: 0.8,
+    stagger: 0.2,
+    scrollTrigger: {
+        trigger: ".plans-section",
+        start: "top 50%",
+    }
 });
 
+
+gsap.from("#trait1, #trait2, #trait3, #trait4, #trait5, #trait6",{
+    opacity: 0,
+    y: 20,
+    duration: 0.6,
+    stagger: 0.2,
+    scrollTrigger:{
+        trigger: ".plans-section",
+        start: "bottom 40%"
+    }
+})
+
+gsap.from(".traits-section", {
+    duration: 0.5,
+    opacity: 0,
+    y: 500,
+    scrollTrigger:{
+        trigger: ".plans-wrapper",
+        start: "top top",
+        scrub: true
+
+    }
+})
+
+});
 
 const plans = [
 
     {
+        id: "card1",
         name: "Starter",
         price: "7.000",
         monthly: "583",
@@ -39,6 +79,7 @@ const plans = [
     },
 
     {
+        id: "card2",
         name: "Business",
         price: "25.000",
         monthly: "2.083",
@@ -49,6 +90,7 @@ const plans = [
     },
 
     {
+        id: "card3",
         name: "Enterprise",
         price: "55.900",
         monthly: "4.658",
@@ -59,6 +101,7 @@ const plans = [
     },
 
     {
+        id:"card4",
         name: "Advanced",
         price: "79.900",
         monthly: "6.658",
@@ -79,7 +122,8 @@ function plansCreation(plansArray){
     const cardPlan = document.createElement("article")
 
     cardPlan.classList.add("plan-card")
-    cardPlan.classList.add("scroll-animate")
+    cardPlan.setAttribute("id", plan.id)
+
 
     cardPlan.innerHTML =`
      <h3 class="plan-name">
@@ -103,4 +147,64 @@ function plansCreation(plansArray){
 }
 }
 
-plansCreation(plans)
+
+const traits = [
+
+  {
+    id: "trait1",
+    title: "Disponibilidad",
+    text: "Mantén tu sitio web siempre disponible, sin caídas y con disponibilidad garantizada las 24 horas."
+  },
+
+  {
+    id: "trait2",
+    title:"Escalibilidad",
+    text: "Puedes hacer un upgrade de tu servicio de forma rápida y sencilla, con tan solo unos pocos clics."
+  },
+
+  {
+    id: "trait3",
+    title: "Seguridad",
+    text: "Protegemos tu sitio web frente a cualquier tipo de ataque, manteniendo tus datos seguros en todo momento."
+
+  },
+
+  {
+    id: "trait4",
+    title:"Soporte",
+    text:"Cuenta con soporte técnico altamente calificado y disponible para ayudarte en todo momento que lo necesites."
+  },
+  {
+    id: "trait5",
+    title:"Backups Semanales",
+    text:"Programa respaldos de tu sitio semanalmente y protege toda tu información de forma automática y segura."
+  },
+  {
+    id: "trait6",
+    title:"Configuración rápida",
+    text:"Configura y personaliza tu servicio de hosting de manera rápida, sencilla y segura con solo unos clics."
+  },
+
+]
+
+
+
+function TraitsCreation(traitsList){
+  const wrapper = document.getElementById("trait-wrapper")
+
+for(const trait of traitsList){
+  const card = document.createElement("article");
+  card.classList.add("trait-card")
+  card.setAttribute("id", trait.id)
+
+
+card.innerHTML = `
+  <h5 class="trait-title">${trait.title}</h5>
+  <p class="traits-text">${trait.text}</p>
+  `
+
+
+  wrapper.appendChild(card)
+
+
+}}

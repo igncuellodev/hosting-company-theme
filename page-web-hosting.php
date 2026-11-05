@@ -40,6 +40,16 @@ Template Name: Web Hosting
         </div>
 
     </section>
+
+    <section class="traits-section">
+
+        <div id="trait-wrapper" class="traits-wrapper">
+        </div>
+
+    </section>
+
+
+
 </main>
 
 
