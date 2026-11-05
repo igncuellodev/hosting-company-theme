@@ -46,7 +46,7 @@ gsap.from("#trait1, #trait2, #trait3, #trait4, #trait5, #trait6",{
     duration: 0.6,
     stagger: 0.2,
     scrollTrigger:{
-        trigger: ".plans-section",
+        trigger: ".characteristics-section",
         start: "bottom 40%"
     }
 })
@@ -54,10 +54,10 @@ gsap.from("#trait1, #trait2, #trait3, #trait4, #trait5, #trait6",{
 gsap.from(".traits-section", {
     duration: 0.5,
     opacity: 0,
-    y: 500,
+    scale: 0.80,
     scrollTrigger:{
-        trigger: ".plans-wrapper",
-        start: "top top",
+        trigger: ".characteristics-section",
+        start: "top 30%",
         scrub: true
 
     }

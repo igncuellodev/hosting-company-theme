@@ -41,6 +41,39 @@ Template Name: Web Hosting
 
     </section>
 
+    <section class="characteristics-section">
+        <div class="characteristics-content-wrapper">
+            <img src="<?php echo esc_url(get_theme_file_uri('./assets/img/webp/characteristics.webp')) ?>" class="characteristics-img" alt="">
+            <div class="characteristics">
+                <div class="characteristics-text">
+                    <h2 class="h2-titles"><span class="highlight">Caracteristicas</span> de los hostings</h2>
+                    <p class="dark-text left">Nuestro paquete de alojamiento le ofrece la posibilidad de crear un sitio web hosting y la libertad de elegir su propio nombre de dominio. </p>
+                </div>
+
+
+                <div class="lists-characteristics-wrapper">
+                    <ul class="list-characteristics">
+                        <li class="characteristic">Wordpress</li>
+                        <li class="characteristic">Datacenter en Chile</li>
+                        <li class="characteristic">Tecnología SSD</li>
+                        <li class="characteristic">Certificado SSL</li>
+                    </ul>
+
+                    <ul class="list-characteristics">
+                        <li class="characteristic">Soporte especializado</li>
+                        <li class="characteristic">Trnasferencia ilimitada</li>
+                        <li class="characteristic">Seguridad</li>
+                        <li class="characteristic">Licencia cPanel</li>
+                    </ul>
+                </div>
+
+            </div>
+
+        </div>
+    </section>
+
+
+
     <section class="traits-section">
 
         <div id="trait-wrapper" class="traits-wrapper">

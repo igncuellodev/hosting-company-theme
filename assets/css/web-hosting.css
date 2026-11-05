@@ -127,6 +127,49 @@ gap: 0.8rem;
   font-size: var(--font-size-text-lg);
 }
 
+.characteristics-section{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  margin-top: 8rem;
+}
+
+.characteristics-content-wrapper{
+  display: flex;
+  width: 100%;
+  max-width: 1280px;
+  gap: 83px;
+}
+
+.characteristics-img{
+  border-radius: 32px;
+}
+
+.characteristics{
+  display: flex;
+  flex-direction: column;
+  gap:  54px;
+
+}
+
+.lists-characteristics-wrapper{
+  width: 100%;
+  display: flex;
+  gap: 5.5rem;
+}
+
+.list-characteristics{
+  display: flex;
+  flex-direction: column;
+  gap: 2.125rem;
+  list-style-type: none;
+}
+
+.characteristic{
+  font-size: var(--font-size-h6);
+}
+
 
 
 @media (min-width: 300px){
