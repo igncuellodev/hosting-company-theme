@@ -1,6 +1,7 @@
 document.addEventListener("DOMContentLoaded", () => {
   plansCreation(plans);
   TraitsCreation(traits);
+  CreateFaq(faqs);
 
   const mm = gsap.matchMedia();
 
@@ -71,11 +72,23 @@ document.addEventListener("DOMContentLoaded", () => {
       ".animation, .animation2, .char1, .char2, .char3, .char4, .char5, .char6, .char7, .char8",
       {
         opacity: 0,
-        stagger: 0.2,
+        stagger: 0.08,
         y: 10,
         scrollTrigger: {
           trigger: ".plans-section",
           start: "top -22%",
+        },
+      },
+    );
+
+    gsap.from(
+      ".faq-title, .faq-text, #faq1, #faq2, #faq3, #faq4, #faq5, #faq6, #faq7",
+      {
+        opacity: 0,
+        stagger: 0.2,
+        scrollTrigger: {
+          trigger: ".traits-section",
+          start: "bottom 40%",
         },
       },
     );
@@ -215,38 +228,52 @@ function TraitsCreation(traitsList) {
 
 const faqs = [
   {
-    question: "¿Qué es Hosting o alojamiento web?",
+    id: "faq1",
+    question: "¿Qué es el hosting compartido?",
     answer:
-      "El alojamiento web es el servicio que permite visualizar un sitio web o blog en Internet. El alojamiento es una forma en que los sitios web pueden compartir espacio web y ancho de banda con los visitantes. Los hosts normalmente brindan espacio de almacenamiento para páginas web, servidores de correo para cuentas de correo electrónico y sockets para FTP.",
+      "En palabras simples es un alojamiento de multiples servicios, tales como paginas web, correos, aplicaciones, base de datos que estan soportadas por servidores de alta tecnologia. ",
   },
 
   {
-    question: "¿Puedo elegir cualquier período de pago que desee?",
+    id: "faq2",
+    question: "¿Quién se encarga de la seguridad del servicio?",
     answer:
-      "Para nuestros planes de hosting principales aceptamos pagos anuales, puedes contratar 2, 3, 4 años o mas comunicandote con el departamento de ventas.",
+      "La empresa proveedora del servicio de hosting es quien debe tomar las medidas necesarias en tanto firewall, antispam y antivirus se refiere. ",
   },
 
   {
-    question: "¿Puedo instalar aplicaciones automáticamente?",
+    id: "faq3",
+    question: "¿Puedo alojar solo la web con un hosting?",
     answer:
-      "Puede instalar aplicaciones a través de nuestro cPanel, con solo hacer clic en un botón. También puede programar cuándo y con qué frecuencia crea copias de seguridad de sus sitios.",
+      "Si, con nuestro servicio puedes usar otros proveedores de mails como Google Apps o Microsoft etc",
   },
   {
-    question: "¿Cómo puedo acceder a mi constructor de sitios web?",
+    id: "faq4",
+    question: "¿Dónde puedo configurar mi servicio de hosting?",
     answer:
-      "Puedes acceder y seleccionar tu constructor de sitios web desde el cPanel con softaculous.",
-  },
-
-  {
-    question: "¿Cómo accesar a cPanel?",
-    answer:
-      "Puede accesar a su cPanel desde el área de clientes de hostingcompany.",
+      "Puedes configurar tu servicio en cualquier dispositivo que tenga un cliente de mails, tanto tablet, computadores, celulares con cualquier sistema operativo.",
   },
 
   {
-    question: "¿Puedo instalar aplicaciones automáticamente?",
+    id: "faq5",
+    question:
+      "¿Quién realiza la migración del servicio si estoy en otro proveedor de hosting?",
     answer:
-      "Es un sistema operativo construido especialmente para empresas de hosting compartido, este ultimo se encarga de mejorar la seguridad en los sistemas y servicios. El factor importante de Cloudlinux en el mercado es que permite ajustar los servicios de hosting con limites en CPU, memoria RAM, acceso a disco, cantidad de archivos, limites en peticiones de php y otros que hacen de este sistema uno de los más usados para estos fines.",
+      "Nosotros realizamos la migracion completa de tu servicio hacia nuestros servidores, solo debes tener accesos a tu actual cPanel y nuestros ingenieros podran revisar si la migracion es factible y en que condiciones. ",
+  },
+
+  {
+    id: "faq6",
+    question: "¿Qué plan escoger?",
+    answer:
+      "Nuestros planes de alojamiento le brindan las herramientas y los recursos que necesita para crear un sitio web exitoso. Nuestro equipo de expertos está aquí para ayudar a garantizar que su sitio esté en funcionamiento las 24 horas del día, los 7 días de la semana. Ofrecemos una variedad de planes de alojamiento para que pueda encontrar el que mejor se adapte a sus necesidades. ¡Desde el nivel básico hasta el empresarial, lo tenemos cubierto con todo, desde almacenamiento premium hasta direcciones IP dedicadas, redes de baja latencia y más! Nuestros planes ofrecen diferentes soluciones a un precio accesible. Alojar su sitio web con nosotros le da el poder de escalar hacia arriba o hacia abajo según sea necesario, sin pagar por los recursos no utilizados. También garantizamos que nuestro servicio estará activo el 100 % del tiempo (esto excluye el mantenimiento programado).",
+  },
+
+  {
+    id: "faq7",
+    question: "¿Puedo migrar mi sitio desde otro hosting?",
+    answer:
+      "Si, en Hostingcompany realizamos migraciones para ello tienes que ir al área de contacto y crear una solicitud para que te indiquemos los pasos para migrar, en este caso se evaluara el tamaño del sitio web y que plan es apto para realizar la migración.",
   },
 ];
 
@@ -260,6 +287,7 @@ function CreateFaq(faqs) {
     faqDetail.classList.add("faq-content");
     pAnswer.classList.add("answer-text");
     summary.classList.add("question");
+    faqDetail.setAttribute("id", faq.id);
 
     summary.textContent = faq.question;
     pAnswer.textContent = faq.answer;
@@ -269,5 +297,3 @@ function CreateFaq(faqs) {
     faqsDiv.appendChild(faqDetail);
   }
 }
-
-CreateFaq(faqs);

@@ -31,7 +31,7 @@ Template Name: Web Hosting
         <div class="plans-wrapper">
             <div class="plans-text-wrapper">
                 <h2 class="h2-titles scroll-animate">Escoge tu <span class="highlight">Plan de Hosting</span></h2>
-                <p class="dark-text scroll-animate">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Blanditiis, aliquid. Similique at, impedit pariatur quis, voluptas hic necessitatibus corporis, debitis odit officiis velit iure culpa blanditiis eum? Quisquam, sunt ea.</p>
+                <p class="dark-text scroll-animate">Hay muchos factores a considerar al elegir su Hosting o alojamiento. Nuestro experimentado equipo técnico ha analizado las necesidades más comunes de nuestros clientes y ha creado planes basados en esas necesidades.</p>
             </div>
             <div id="plans-grid">
 
@@ -84,8 +84,8 @@ Template Name: Web Hosting
 
     <section class="faq-section">
         <div class="faq-text-content">
-            <h2 class="h2-titles"><span class="highlight">Preguntas</span> frecuentes</h2>
-            <p class="dark-text">Conoce más de Hosting Company con algunas de las preguntas que más realizan los usuarios antes de contratar nuestra solución</p>
+            <h2 class="h2-titles faq-title"><span class="highlight">Preguntas</span> frecuentes</h2>
+            <p class="dark-text faq-text">Conoce más de Hosting Company con algunas de las preguntas que más realizan los usuarios antes de contratar nuestra solución</p>
 
         </div>
         <div id="faqs">
@@ -94,6 +94,7 @@ Template Name: Web Hosting
 
 
     </section>
+
 
 
 
