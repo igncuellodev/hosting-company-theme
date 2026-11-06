@@ -43,7 +43,7 @@ Template Name: Web Hosting
 
     <section class="characteristics-section">
         <div class="characteristics-content-wrapper">
-            <img src="<?php echo esc_url(get_theme_file_uri('./assets/img/webp/characteristics.webp')) ?>" class="characteristics-img" alt="">
+            <img src="<?php echo esc_url(get_theme_file_uri('./assets/img/webp/characteristics.webp')) ?>" class="characteristics-img" alt="Imagen de datacenter por fuera">
             <div class="characteristics">
                 <div class="characteristics-text">
                     <h2 class="h2-titles animation"><span class="highlight">Caracteristicas</span> de los hostings</h2>
@@ -53,17 +53,17 @@ Template Name: Web Hosting
 
                 <div class="lists-characteristics-wrapper">
                     <ul class="list-characteristics">
-                        <li class="characteristic char1"><img src="<?php echo esc_url(get_theme_file_uri('./assets/img/svg/wordpress.svg')) ?>" width="25" alt="">Wordpress</li>
-                        <li class="characteristic char2"><img src="<?php echo esc_url(get_theme_file_uri('./assets/img/svg/datacenter.svg')) ?>" width="25" alt="">Datacenter en Chile</li>
-                        <li class="characteristic char3"><img src="<?php echo esc_url(get_theme_file_uri('./assets/img/svg/ssd.svg')) ?>" width="25" alt="">Tecnología SSD</li>
-                        <li class="characteristic char4"><img src="<?php echo esc_url(get_theme_file_uri('./assets/img/svg/ssl.svg')) ?>" width="25" alt="">Certificado SSL</li>
+                        <li class="characteristic char1"><img src="<?php echo esc_url(get_theme_file_uri('./assets/img/svg/wordpress.svg')) ?>" width="25" alt="Logo de wordpress">Wordpress</li>
+                        <li class="characteristic char2"><img src="<?php echo esc_url(get_theme_file_uri('./assets/img/svg/datacenter.svg')) ?>" width="25" alt="Icono de data center">Datacenter en Chile</li>
+                        <li class="characteristic char3"><img src="<?php echo esc_url(get_theme_file_uri('./assets/img/svg/ssd.svg')) ?>" width="25" alt="Ícono de SSD">Tecnología SSD</li>
+                        <li class="characteristic char4"><img src="<?php echo esc_url(get_theme_file_uri('./assets/img/svg/ssl.svg')) ?>" width="25" alt="Ícono de certificado SSD">Certificado SSL</li>
                     </ul>
 
                     <ul class="list-characteristics">
-                        <li class="characteristic char5"><img src="<?php echo esc_url(get_theme_file_uri('./assets/img/svg/soporte.svg')) ?>" width="25" alt="">Soporte especializado</li>
-                        <li class="characteristic char6"><img src="<?php echo esc_url(get_theme_file_uri('./assets/img/svg/transferencia.svg')) ?>" width="25" alt="">Transferencia ilimitada</li>
-                        <li class="characteristic char7"><img src="<?php echo esc_url(get_theme_file_uri('./assets/img/svg/seguridad.svg')) ?>" width="25" alt="">Seguridad</li>
-                        <li class="characteristic char8"><img src="<?php echo esc_url(get_theme_file_uri('./assets/img/svg/licencia.svg')) ?>" width="25" alt="">Licencia cPanel</li>
+                        <li class="characteristic char5"><img src="<?php echo esc_url(get_theme_file_uri('./assets/img/svg/soporte.svg')) ?>" width="25" alt="Ícono de soporte">Soporte especializado</li>
+                        <li class="characteristic char6"><img src="<?php echo esc_url(get_theme_file_uri('./assets/img/svg/transferencia.svg')) ?>" width="25" alt="Ícono de transferencia">Transferencia ilimitada</li>
+                        <li class="characteristic char7"><img src="<?php echo esc_url(get_theme_file_uri('./assets/img/svg/seguridad.svg')) ?>" width="25" alt="Ícono de seguridad">Seguridad</li>
+                        <li class="characteristic char8"><img src="<?php echo esc_url(get_theme_file_uri('./assets/img/svg/licencia.svg')) ?>" width="25" alt="Ícono de licencia">Licencia cPanel</li>
                     </ul>
                 </div>
 
@@ -94,6 +94,8 @@ Template Name: Web Hosting
 
 
     </section>
+
+
 
 
 

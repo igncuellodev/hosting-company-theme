@@ -85,7 +85,7 @@ document.addEventListener("DOMContentLoaded", () => {
       ".faq-title, .faq-text, #faq1, #faq2, #faq3, #faq4, #faq5, #faq6, #faq7",
       {
         opacity: 0,
-        stagger: 0.2,
+        stagger: 0.08,
         scrollTrigger: {
           trigger: ".traits-section",
           start: "bottom 40%",
@@ -104,7 +104,7 @@ const plans = [
     ssd: 7,
     sitios: 1,
     db: 1,
-    //Se agregaron solo los elementos que cambian por plan
+    link: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTyB4r0BcTFknt172G1tT8d0bL_k1D2abR0YzreVOZxNcdIizRzof6CV64&s=10",
   },
 
   {
@@ -115,6 +115,7 @@ const plans = [
     ssd: 10,
     sitios: 2,
     db: 2,
+    link: "https://www.falabella.cl",
     //Se agregaron solo los elementos que cambian por plan
   },
 
@@ -126,6 +127,7 @@ const plans = [
     ssd: 25,
     sitios: 3,
     db: 4,
+    link: "https://www.hostinglatam.cl",
     //Se agregaron solo los elementos que cambian por plan
   },
 
@@ -137,6 +139,7 @@ const plans = [
     ssd: 50,
     sitios: 5,
     db: 8,
+    link: "https://www.tecnoinver.cl",
 
     //Se agregaron solo los elementos que cambian por plan
   },
@@ -159,14 +162,14 @@ function plansCreation(plansArray) {
     <p class="monthly">Desde ${plan.monthly} por mes*</p>
      <hr class="plan-divider">
 
-     <a href="" class="outline-btn2">Contratar</a>
+     <a href="${plan.link}" class="outline-btn2">Contratar</a>
 
     <ul class="plan-specs">
-        <li class="spec"><img class="spec-icon" src="/wp-content/themes/hosting-company-theme/assets/img/svg/ssd.svg" alt="">${plan.ssd} GB SSD</li>
-        <li class="spec"><img class="spec-icon" src="/wp-content/themes/hosting-company-theme/assets/img/svg/email.svg" alt="">Emails Ilimitados</li>
-        <li class="spec" id="sitios"><img class="spec-icon" src="/wp-content/themes/hosting-company-theme/assets/img/svg/website.svg" alt="">${plan.sitios} ${plan.sitios === 1 ? "sitio web" : "sitios web"}</li>
-        <li class="spec"><img class="spec-icon" src="/wp-content/themes/hosting-company-theme/assets/img/svg/db.svg" alt="">${plan.db} Base de datos</li>
-        <li class="spec"><img class="spec-icon" src="/wp-content/themes/hosting-company-theme/assets/img/svg/ssl.svg" alt="">Certificado SSL Gratis</li>
+        <li class="spec"><img class="spec-icon" src="/wp-content/themes/hosting-company-theme/assets/img/svg/ssd.svg" alt="Ícono de SSD" width="18">${plan.ssd} GB SSD</li>
+        <li class="spec"><img class="spec-icon" src="/wp-content/themes/hosting-company-theme/assets/img/svg/email.svg" alt="Ícono de email" width="18">Emails Ilimitados</li>
+        <li class="spec" id="sitios"><img class="spec-icon" src="/wp-content/themes/hosting-company-theme/assets/img/svg/website.svg" alt="Ícono de sitio web" width="18">${plan.sitios} ${plan.sitios === 1 ? "sitio web" : "sitios web"}</li>
+        <li class="spec"><img class="spec-icon" src="/wp-content/themes/hosting-company-theme/assets/img/svg/db.svg" alt="Ícono de base de datos" width="18">${plan.db} Base de datos</li>
+        <li class="spec"><img class="spec-icon" src="/wp-content/themes/hosting-company-theme/assets/img/svg/ssl.svg" alt="Ícono de SSl" width="18">Certificado SSL Gratis</li>
     </ul>
 `;
     plansGrid.appendChild(cardPlan);
