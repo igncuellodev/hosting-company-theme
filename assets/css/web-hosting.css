@@ -228,6 +228,10 @@
     height: fit-content;
   }
 
+  .plans-wrapper {
+    padding: 1rem;
+  }
+
   #plans-grid {
     display: flex;
     flex-direction: column;
@@ -235,14 +239,23 @@
 
   .characteristics-content-wrapper {
     flex-direction: column;
+    padding: 1rem;
+    gap: 2rem;
   }
 
   .lists-characteristics-wrapper {
     flex-direction: column;
   }
+
+  .faq-section {
+    padding: 1rem;
+  }
 }
 
 @media (min-width: 720px) {
+  .web-hosting-hero {
+    padding: 2rem;
+  }
   .traits-wrapper {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -251,9 +264,35 @@
   .traits-section {
     height: 900px;
   }
+
+  .plans-wrapper {
+    padding: 2rem;
+  }
+
+  #plans-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .characteristics-content-wrapper {
+    flex-direction: column;
+    padding: 2rem;
+    gap: 2rem;
+  }
+
+  .lists-characteristics-wrapper {
+    flex-direction: row;
+  }
+
+  .faq-section {
+    padding: 2rem;
+  }
 }
 
-@media (min-width: 1020px) {
+@media (min-width: 1200px) {
+  .web-hosting-hero {
+    padding: 1rem;
+  }
   .hero-section {
     height: 1000px;
     padding-top: 13rem;
@@ -305,35 +344,12 @@
     order: 0;
   }
 
-  .plans {
-    display: grid;
-    margin-top: 6rem;
-  }
-
-  .recommended {
-    order: 0;
-  }
-
-  .icons {
-    margin-top: 10rem;
-  }
-
-  .first,
-  .fourth {
-    top: 6rem;
-  }
-
-  .icon-box {
-    width: 90px;
-    height: 90px;
-  }
-
   .characteristics-content-wrapper {
     flex-direction: row;
   }
 
   #plans-grid {
-    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
   }
 
   .lists-characteristics-wrapper {

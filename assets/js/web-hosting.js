@@ -104,7 +104,7 @@ const plans = [
     ssd: 7,
     sitios: 1,
     db: 1,
-    link: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTyB4r0BcTFknt172G1tT8d0bL_k1D2abR0YzreVOZxNcdIizRzof6CV64&s=10",
+    link: "https://clientes.hostingcompany.cl/index.php?rp=/store/hosting/starter",
   },
 
   {
@@ -115,7 +115,7 @@ const plans = [
     ssd: 10,
     sitios: 2,
     db: 2,
-    link: "https://www.falabella.cl",
+    link: "https://clientes.hostingcompany.cl/index.php?rp=/store/hosting/business",
     //Se agregaron solo los elementos que cambian por plan
   },
 
@@ -127,7 +127,7 @@ const plans = [
     ssd: 25,
     sitios: 3,
     db: 4,
-    link: "https://www.hostinglatam.cl",
+    link: "https://clientes.hostingcompany.cl/index.php?rp=/store/hosting/entrerprise",
     //Se agregaron solo los elementos que cambian por plan
   },
 
@@ -139,7 +139,7 @@ const plans = [
     ssd: 50,
     sitios: 5,
     db: 8,
-    link: "https://www.tecnoinver.cl",
+    link: "https://clientes.hostingcompany.cl/index.php?rp=/store/hosting/advanced",
 
     //Se agregaron solo los elementos que cambian por plan
   },
