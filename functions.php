@@ -100,6 +100,51 @@ add_action('wp_enqueue_scripts', 'hosting_scripts');
 add_action('wp_enqueue_scripts', 'hosting_styles');
 add_action('wp_enqueue_scripts', 'theme_gsap_script');
 
+/**
+ * Load Swiper and carousel assets only on the Cloud Datacenter page.
+ */
+function hosting_enqueue_cloud_datacenter_carousel_assets()
+{
+    if (!is_page(array('cloud-datacenter', 'cloud-data-center')) && !is_page_template('page-cloud-datacenter.php')) {
+        return;
+    }
+
+    $carousel_stylesheet_path = get_theme_file_path('/assets/css/carousel.css');
+    $carousel_script_path = get_theme_file_path('/assets/js/carousel.js');
+
+    wp_enqueue_style(
+        'hosting-swiper',
+        'https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css',
+        array(),
+        '12'
+    );
+
+    wp_enqueue_style(
+        'hosting-carousel',
+        get_theme_file_uri('/assets/css/carousel.css'),
+        array('hosting-global', 'hosting-swiper'),
+        filemtime($carousel_stylesheet_path)
+    );
+
+    wp_enqueue_script(
+        'hosting-swiper',
+        'https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js',
+        array(),
+        '12',
+        true
+    );
+
+    wp_enqueue_script(
+        'hosting-carousel',
+        get_theme_file_uri('/assets/js/carousel.js'),
+        array('hosting-swiper'),
+        filemtime($carousel_script_path),
+        true
+    );
+}
+
+add_action('wp_enqueue_scripts', 'hosting_enqueue_cloud_datacenter_carousel_assets');
+
 
 
 

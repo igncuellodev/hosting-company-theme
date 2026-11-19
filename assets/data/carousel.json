@@ -1,0 +1,29 @@
+{
+  "textcontent": [
+    {
+      "title": "Disponibilidad 24/7",
+      "text": "Nuestra plataforma te permite monitorear tus servicios de forma independiente."
+    },
+    {
+      "title": "Rendimiento Top",
+      "text": "El tener ultima tecnología tus servicios tendran alta contingencia y alto desempeño."
+    },
+    {
+      "title": "Seguridad",
+      "text": "Nuestro firewall perimetral te permite aislar tu red de otros paises."
+    },
+    {
+      "title": "Migración gratuita",
+      "text": "Tenemos tecnologia para poder clonar tu infraestructura y llevarla a nuestras"
+    },
+    {
+      "title": "Backup",
+      "text": "Realizamos respaldos en servidores externos a nuestros equipos de forma diaria."
+    },
+
+    {
+      "title": "Configuración gratuita",
+      "text": "En pocos clics tu servicio estara configurado y preparado para estar en internet."
+    }
+  ]
+}

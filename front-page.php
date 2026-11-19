@@ -259,16 +259,6 @@
     <?php wp_reset_postdata(); ?>
 
 
-    <section>
-        <h2 id="pokemon-name"></h2>
-
-        <ul id="pokemon-attributes">
-
-        </ul>
-
-    </section>
-
-
 </main>
 
 
