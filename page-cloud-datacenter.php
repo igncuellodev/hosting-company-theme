@@ -35,7 +35,10 @@ $carousel_cards = isset($carousel_content['textcontent']) && is_array($carousel_
                     <?php endforeach; ?>
                 </div>
                 <div class="swiper-controls">
-                    <div class="swiper-pagination"></div>
+                    <div class="carousel-pagination-group">
+                        <div class="swiper-pagination"></div>
+                        <span class="carousel-page-counter" aria-label="Página del carrusel"></span>
+                    </div>
                     <div class="carousel-buttons">
                         <button class="swiper-button-prev" type="button" aria-label="Tarjeta anterior">
                             <img src="<?php echo esc_url(get_theme_file_uri('/assets/img/carousel/arrow-prev.svg')); ?>" width="20" alt="">

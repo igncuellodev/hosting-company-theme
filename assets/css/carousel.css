@@ -8,7 +8,7 @@
 }
 
 .cloud-datacenter-carousel .swiper {
-  --swiper-pagination-bullet-width: 32px;
+  --swiper-pagination-bullet-width: 20px;
   --swiper-pagination-bullet-height: 4px;
   --swiper-pagination-bullet-border-radius: 2px;
   --swiper-pagination-bullet-horizontal-gap: 6px;
@@ -52,10 +52,37 @@
   margin-top: 2rem;
 }
 
+.cloud-datacenter-carousel .carousel-pagination-group {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.cloud-datacenter-carousel .carousel-page-counter {
+  white-space: nowrap;
+  font-variant-numeric: tabular-nums;
+  font-size: 1rem;
+  color: var(--dark-500);
+}
+
 .cloud-datacenter-carousel .swiper .swiper-pagination {
   position: static;
   transform: none;
   width: fit-content;
+}
+
+.cloud-datacenter-carousel .swiper-pagination-bullet {
+  transition: width 200ms ease;
+}
+
+.cloud-datacenter-carousel .swiper-pagination-bullet-active {
+  width: 48px;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .cloud-datacenter-carousel .swiper-pagination-bullet {
+    transition: none;
+  }
 }
 
 .cloud-datacenter-carousel .swiper .swiper-button-prev {
@@ -68,6 +95,11 @@
   cursor: pointer;
   background-color: var(--red-500);
   color: white;
+  transition: ease-in 200ms;
+}
+
+.swiper-button-prev:hover, .swiper-button-next:hover{
+  transform: translateY(-5px);
 }
 
 .cloud-datacenter-carousel .swiper .swiper-button-next {
@@ -79,6 +111,7 @@
   border: none;
   cursor: pointer;
   background-color: var(--red-500);
+  transition: ease-in 200ms;
 }
 
 .cloud-datacenter-carousel .carousel-buttons {

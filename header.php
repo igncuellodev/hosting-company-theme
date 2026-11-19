@@ -25,7 +25,7 @@
                 <li><a class="nav-link" href="/servidores-vps">Servidores VPS</a></li>
                 <li id="dropdown">Servicios
                     <ul class="dropdown-list">
-                        <li><a class="nav-link" href="/cloud-data-center">Cloud Data Center</a></li>
+                        <li><a class="nav-link" href="/cloud-datacenter">Cloud Data Center</a></li>
                         <li><a class="nav-link" href="/doble-factor">Atenticación doble factor (2FA)</a></li>
                         <li><a class="nav-link" href="/eset-antivirus">ESET Antivirus</a></li>
                         <li><a class="nav-link" href="/ethical-hacking">Ethical Hacking</a></li>

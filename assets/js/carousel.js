@@ -1,3 +1,22 @@
+function updateCloudDatacenterPageCounter(carouselInstance) {
+  const pageCounterElement = carouselInstance.el.querySelector(
+    ".carousel-page-counter",
+  );
+
+  if (!pageCounterElement) {
+    return;
+  }
+
+  const totalPages = carouselInstance.snapGrid.length;
+  const currentPage = Math.min(carouselInstance.snapIndex + 1, totalPages);
+
+  pageCounterElement.textContent = `${currentPage} / ${totalPages}`;
+  pageCounterElement.setAttribute(
+    "aria-label",
+    `Página ${currentPage} de ${totalPages}`,
+  );
+}
+
 function initializeCloudDatacenterCarousels() {
   if (typeof Swiper === "undefined") {
     return;
@@ -23,7 +42,7 @@ function initializeCloudDatacenterCarousels() {
       autoplay: prefersReducedMotion
         ? false
         : {
-            delay: 2000,
+            delay: 4000,
           },
       breakpoints: {
         320: { slidesPerView: 1 },
@@ -42,6 +61,11 @@ function initializeCloudDatacenterCarousels() {
         prevSlideMessage: "Tarjeta anterior",
         nextSlideMessage: "Tarjeta siguiente",
         paginationBulletMessage: "Ir a la tarjeta {{index}}",
+      },
+      on: {
+        init: updateCloudDatacenterPageCounter,
+        snapIndexChange: updateCloudDatacenterPageCounter,
+        snapGridLengthChange: updateCloudDatacenterPageCounter,
       },
     });
   });
