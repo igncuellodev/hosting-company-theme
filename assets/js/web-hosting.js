@@ -13,18 +13,6 @@ document.addEventListener("DOMContentLoaded", () => {
       stagger: 0.4,
     });
 
-    gsap.to(".web-hosting-hero", {
-      duration: 0.5,
-      scale: 0.9,
-      ease: "power1.out",
-      scrollTrigger: {
-        trigger: ".hero-img-container",
-        start: "top top",
-        end: "bottom top",
-        scrub: true,
-      },
-    });
-
     gsap.from("#card1, #card2, #card3, #card4", {
       opacity: 0,
       y: 30,

@@ -35,6 +35,17 @@ function hosting_scripts()
             true
 
         );
+    } else if(is_page('cloud-datacenter')){
+        $cloud_data_center_script = get_template_directory() .'/assets/js/cloud-data.js';
+
+         wp_enqueue_script(
+            'cloud_data_center_script',
+            get_template_directory_uri() . '/assets/js/cloud-data.js',
+            array(),
+            filemtime($cloud_data_center_script),
+            true
+
+        );
     }
 }
 

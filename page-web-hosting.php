@@ -4,9 +4,9 @@ Template Name: Web Hosting
 
 
 <main>
-    <section class="web-hosting-hero">
+    <section class="heros">
 
-        <div class="hero-img-container">
+        <div class="hero-img-container web-hosting-image">
             <div class="hero-intro-wrapper">
                 <div class="hero-intro">
 
@@ -49,6 +49,8 @@ Template Name: Web Hosting
                     <h2 class="h2-titles animation"><span class="highlight">Caracteristicas</span> de los hostings</h2>
                     <p class="dark-text animation2">Nuestro paquete de alojamiento le ofrece la posibilidad de crear un sitio web hosting y la libertad de elegir su propio nombre de dominio. </p>
                 </div>
+
+                <hr>
 
 
                 <div class="lists-characteristics-wrapper">

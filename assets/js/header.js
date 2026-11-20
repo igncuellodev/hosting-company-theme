@@ -35,8 +35,6 @@ dropdownBtn.addEventListener("mouseenter", openDropdown);
 dropdownBtn.addEventListener("mouseleave", closeDropdown);
 dropDownList.addEventListener("mouseleave", closeDropdown);
 
-
-
 document.addEventListener("DOMContentLoaded", () => {
   gsap.registerPlugin(ScrollTrigger);
 
@@ -55,3 +53,20 @@ document.addEventListener("DOMContentLoaded", () => {
   });
 });
 
+const heroTarget = document.querySelector(".heros");
+
+if (heroTarget) {
+  document.addEventListener("DOMContentLoaded", () => {
+    gsap.to(heroTarget, {
+      duration: 0.5,
+      scale: 0.9,
+      ease: "power1.out",
+      scrollTrigger: {
+        trigger: ".hero-img-container",
+        start: "top top",
+        end: "bottom top",
+        scrub: true,
+      },
+    });
+  });
+}
